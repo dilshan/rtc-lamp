@@ -1,12 +1,18 @@
+
+
 # RTC based automatic LED lamp
 
 This is real-time clock based automatic LED lamp which we originally designed to use as night light. This lamp can programmed to turn on and off at the specific time of the day. For example, it can program to turn on at 6 PM on each day and to turn off at 4 AM next day.
+
+![Prototype version of LED lamp](https://raw.githubusercontent.com/dilshan/rtc-lamp/master/resources/rect-light-prototype.png)
 
 The core component of this project is PIC16F883 MCU and it's firmware is developed using *MikroC Pro for PIC*. We select this MCU because of it's 7 KB flash memory, I2C, UART, E2PROM and built-in 8-bit and 16-bit timers. In this system we use DS1307 RTC because of it's availability in the market and lower external component count.
 
 ### LED module
 
 This lamp is designed to work with commonly available 7W LED panels. In our prototype design we use 7W 24V warm-white LED module to test this system. To drive other LED modules change value of the R5 resistor of the current limiter circuit.
+
+![7W LED module used in prototype build](https://raw.githubusercontent.com/dilshan/rtc-lamp/master/resources/led-module.png)
 
 LED modules, heat-sink and lamp enclosures are now commonly available in the market but make sure to use good quality 24V - 28V LED module with this circuit. During our prototype we found lot of defective LED modules in the market.
 
@@ -76,13 +82,13 @@ If host PC is not equipped with serial port, use USB to RS232 converter cable / 
 
 ### Datasheets
 
-[PIC16F883 - 28-Pin Enhanced Flash-Based, 8-Bit. CMOS Microcontrollers with. nanoWatt Technology.](https://octopart.com/pic16f883-e/sp-microchip-484880?r=sp&s=gf3fl0DDQqu7zfi6Mu1mTg)
-[DS1307 - Serial Real-Time Clock](https://octopart.com/ds1307+-maxim+integrated-998915?r=sp&s=hPqOpBiTSiaPCVOwAzWNwA)
-[MAX232 - 5V-Powered, Multichannel RS-232 Drivers/Receivers](https://octopart.com/max232cpe-maxim+integrated-55450068?r=sp&s=dPfpbiRnRZ2jJNLkmzmRFQ)
-[LM7805 - 3-Terminal, 1A Positive Voltage Regulator.](https://octopart.com/lm7805ct/nopb-texas+instruments-23919374?r=sp&s=__mIdAy-R1qIqddPHdqk4g)
-[STP55NF06 - N-CHANNEL 60V - 50A Power MOSFET](https://octopart.com/stp55nf06-stmicroelectronics-335317?r=sp&s=E7hGFTBFSqqGf4v1k2f-rA)
-[2SC945 - NPN Silicon Transistor](https://octopart.com/2sc945a-a-renesas-66523934?r=sp&s=pYvJG4XtT0ekf6kEQFJn-A)
-[6A10 - 1000 V - 6 A High Surge Current Silicon Rectifier](https://octopart.com/6a10-t-diodes+inc.-55426548?r=sp&s=7SjnoxDITDCXdY6NPBmLIg)
+- [PIC16F883 - 28-Pin Enhanced Flash-Based, 8-Bit. CMOS Microcontrollers with. nanoWatt Technology.](https://octopart.com/pic16f883-e/sp-microchip-484880?r=sp&s=gf3fl0DDQqu7zfi6Mu1mTg)
+- [DS1307 - Serial Real-Time Clock](https://octopart.com/ds1307+-maxim+integrated-998915?r=sp&s=hPqOpBiTSiaPCVOwAzWNwA)
+- [MAX232 - 5V-Powered, Multichannel RS-232 Drivers/Receivers](https://octopart.com/max232cpe-maxim+integrated-55450068?r=sp&s=dPfpbiRnRZ2jJNLkmzmRFQ)
+- [LM7805 - 3-Terminal, 1A Positive Voltage Regulator.](https://octopart.com/lm7805ct/nopb-texas+instruments-23919374?r=sp&s=__mIdAy-R1qIqddPHdqk4g)
+- [STP55NF06 - N-CHANNEL 60V - 50A Power MOSFET](https://octopart.com/stp55nf06-stmicroelectronics-335317?r=sp&s=E7hGFTBFSqqGf4v1k2f-rA)
+- [2SC945 - NPN Silicon Transistor](https://octopart.com/2sc945a-a-renesas-66523934?r=sp&s=pYvJG4XtT0ekf6kEQFJn-A)
+- [6A10 - 1000 V - 6 A High Surge Current Silicon Rectifier](https://octopart.com/6a10-t-diodes+inc.-55426548?r=sp&s=7SjnoxDITDCXdY6NPBmLIg)
 
 ### License
 
